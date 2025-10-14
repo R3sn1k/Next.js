@@ -5,7 +5,7 @@ import { fetchCardData } from '@/app/lib/data';
 export default async function RevenueGoalChart() {
   const { totalPaidInvoices, totalPendingInvoices } = await fetchCardData();
 
-  const goal = 2_000;
+  const goal = 2_100;
 
   function parseCurrency(value: string | number): number {
     if (typeof value === "number") return value;
